@@ -1,0 +1,28 @@
+UserBundle\Entity\Etablissement:
+    type: entity
+    table: null
+    repositoryClass: UserBundle\Repository\EtablissementRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+            column: Nom
+        adresse:
+            type: string
+            length: 255
+            column: Adresse
+        horaire:
+            type: string
+            length: 255
+            column: Horaire
+        description:
+            type: string
+            length: 255
+            column: Description
+    lifecycleCallbacks: {  }
